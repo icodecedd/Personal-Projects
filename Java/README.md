@@ -1,1 +1,1 @@
-
+This repository contains a collection of practical Java programming projects, designed to strengthen my understanding of object-oriented programming concepts and improve problem-solving skills. Each project focuses on various aspects of Java development, including data structures, algorithms, file handling, and GUI applications.
