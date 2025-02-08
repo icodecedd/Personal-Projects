@@ -1,16 +1,23 @@
 package cedrickMariano;
-import java.util.Scanner;
+import java.util.Scanner; // java package used to prompt users to input data.
 
 public class Calculator {
 
     public static void Operation(String operation) {
-		Scanner scan = new Scanner(System.in);
+	// initialization of new Scanner
+	Scanner scan = new Scanner(System.in);
+
+	// prompts user to input the first number
         System.out.print("\nEnter Number 1: ");
         double numOne = scan.nextDouble();
+
+	// prompts user to input the second number
         System.out.print("Enter Number 2: ");
         double numTwo = scan.nextDouble();
+        
         double result = 0.0;
 
+	// an if-else ladder for identifying which operation to use
         if (operation.equals("addition")) {
             result = numOne + numTwo;
             System.out.println("Addition: " + result);
@@ -28,8 +35,7 @@ public class Calculator {
                 result = numOne / numTwo;
                 System.out.println("Division: " + result);
             }
-        } 
-        else {
+        } else {
             System.out.println("Invalid operation");
         }
     }
@@ -47,6 +53,8 @@ public class Calculator {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+
+	// a header layout for the calculator simulator   
         System.out.println("───────────────────────────────");
         System.out.println("Welcome to Calculator Simulator");
         System.out.println("───────────────────────────────");
@@ -58,6 +66,8 @@ public class Calculator {
         System.out.println("[5] Exit");
 
         int option = 0;
+
+	// prompts the user to choose which option/operation to use
         while (option != 5) {
             System.out.print("Choose Option: ");
             option = scan.nextInt();
