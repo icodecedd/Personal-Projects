@@ -40,6 +40,7 @@ public class Calculator {
         }
     }
 
+    // a method for the exit calculator animation 
     public static void exitCalculator() {
         for (int count = 5; count > 0; count--) {
             System.out.println("Closing Calculator in [" + count + "]");
@@ -92,6 +93,6 @@ public class Calculator {
                     break;
             }
         }
-        scan.close();
+        scan.close(); // close the scanner
     }
 }
